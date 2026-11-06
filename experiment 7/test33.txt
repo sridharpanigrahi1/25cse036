@@ -1,0 +1,14 @@
+package accessdemo;
+
+public class test33 {
+    public static void main(String[] args) {
+        AccessExample obj = new AccessExample();
+
+        System.out.println("Within Package:");
+        System.out.println("Public: " + obj.a);
+        System.out.println("Protected: " + obj.b);
+        System.out.println("Default: " + obj.c);
+
+        obj.display();
+    }
+}

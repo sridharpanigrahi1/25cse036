@@ -1,0 +1,10 @@
+import mathematical.MathOperations;
+
+public class test35 {
+    public static void main(String[] args) {
+        MathOperations m = new MathOperations();
+
+        m.square(5);
+        m.cube(3);
+    }
+}

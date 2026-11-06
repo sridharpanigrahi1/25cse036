@@ -1,0 +1,16 @@
+interface NumberPrinter {
+    void printNumber(int number);
+}
+
+class Printer implements NumberPrinter {
+    public void printNumber(int number) {
+        System.out.println("Number: " + number);
+    }
+}
+
+public class test23 {
+    public static void main(String[] args) {
+        Printer p = new Printer();
+        p.printNumber(100);
+    }
+}

@@ -1,0 +1,14 @@
+import accessdemo.AccessExample;
+
+public class test34 extends AccessExample {
+    public static void main(String[] args) {
+        test34 obj = new test34();
+
+        System.out.println("Outside Package:");
+        System.out.println("Public: " + obj.a);
+        System.out.println("Protected: " + obj.b);
+
+        // Default and private members cannot
+        // be accessed directly here.
+    }
+}

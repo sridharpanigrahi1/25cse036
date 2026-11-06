@@ -1,0 +1,22 @@
+interface Greetings {
+    void sayHello();
+
+    default void sayBye() {
+        System.out.println("Goodbye!");
+    }
+}
+
+class Message implements Greetings {
+    public void sayHello() {
+        System.out.println("Hello!");
+    }
+}
+
+public class test22 {
+    public static void main(String[] args) {
+        Message m = new Message();
+
+        m.sayHello();
+        m.sayBye();
+    }
+}
